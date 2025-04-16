@@ -449,9 +449,35 @@ footer {
     transform: scale(1.05); /* Slightly enlarge the image */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow intensity */
 }
+        
+.upload-section {
+      margin-bottom: 20px;
+    }
 
+    label {
+      font-weight: bold;
+    }
 
-          
+    input[type="file"] {
+      display: block;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .preview {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .preview img,
+    .preview video {
+      max-width: 300px;
+      max-height: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
         
 
     </style>
