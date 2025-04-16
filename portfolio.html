@@ -478,7 +478,28 @@ footer {
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-        
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .media-box {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .media-box img, 
+    .media-box video {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
 
     </style>
 </head>
@@ -566,9 +587,21 @@ footer {
         <img src="VIPER/billboard.png">
      </div>
 
-     <div class="ltd">
-        <img src="VIPER/ltd.png">
-     </div>
+    <div class="container">
+    <div class="media-box">
+      <h2>Image Preview</h2>
+      <img src="product mockup.png" alt="Product Mockup">
+      <img src="render2" alt="Product Mockup">
+    </div>
+
+    <div class="media-box">
+      <h2>Video Preview</h2>
+      <video controls>
+        <source src="Gen-4 Turn this logo to reality 1195574741.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
 
      <div class="pbillboard">
         <img src="VIPER/p_billboard.png">
